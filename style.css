@@ -554,7 +554,6 @@ form input[type="text"] {
 .form-column {
   flex: 1;
   margin-right: 10px;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
