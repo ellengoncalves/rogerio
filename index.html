@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página web</title>
   <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
   <div class="container">
     <div class="header" style="height: 10px">
       <img src="fotos/patinha.jpg" alt="Logo de Patinha" class="logo">
-      <a href="#section1" class="menu-item">Quem somos</a>
       <div class="menu" id="menu">
+        <a href="#section1" class="menu-item">Quem somos</a>
         <a href="#section2" class="menu-item">Galeria</a>
         <a href="#section3" class="menu-item">Animais para adoção</a>
         <a href="#section4" class="menu-item">Educacionais</a>
@@ -72,7 +76,14 @@
 
     <section id="section3">
       <h1>Lista de Animais</h1>
-      <input type="text" name="pesquisa" id="pesquisa" class="search-bar">
+      <div class="filtros">
+        <input type="text" name="pesquisa" id="pesquisa" class="search-bar">
+        <select name="tipo-animal" id="tipo-animal">
+          <option value="todos">todos</option>
+          <option value="gato">gato</option>
+          <option value="cachorro">cachorro</option>
+        </select>
+      </div>
       <div id="gridContainer"></div>
       <div id="informacoes"></div>
       <div id="fade" class="hide"></div>
@@ -94,57 +105,102 @@
         adotante. Antes de tomar essa decisão, é importante entender o que a adoção envolve e como cuidar do novo membro
         da família de maneira responsável. <br><br>
 
-        <b>1. A Importância da Adoção<br></b>
-
-        A adoção de animais de estimação desempenha um papel fundamental na redução do número de animais abandonados nas
-        ruas e abrigos. Quando você opta pela adoção, está salvando a vida de um animal e dando a ele a chance de ter um
-        lar amoroso.<br><br>
-
-        <b>2. Escolhendo o Animal Certo<br></b>
-
-        Antes de adotar, considere seu estilo de vida, espaço e recursos disponíveis. Escolha um animal que se adapte às
-        suas circunstâncias. Cães, gatos, pássaros e animais exóticos têm necessidades diferentes.<br><br>
-
-        <b>3. Abrigo ou Resgate<br></b>
-
-        Ao adotar, você pode escolher entre abrigos de animais ou organizações de resgate. Ambos oferecem oportunidades
-        de adoção, e os animais disponíveis variam, mas todos merecem um lar amoroso.<br><br>
-
-        <b>4. Responsabilidade de Longo Prazo<br></b>
-
-        A adoção é um compromisso de longo prazo, pois a expectativa de vida de animais de estimação pode ser de muitos
-        anos. Certifique-se de que está disposto a dedicar tempo, dinheiro e cuidados ao seu novo companheiro.<br><br>
-
-        <b>5. Bem-Estar e Cuidados de Saúde<br></b>
-
-        Mantenha seu animal de estimação saudável com visitas regulares ao veterinário, vacinações e cuidados dentários.
-        Forneça alimentação de qualidade e água fresca, além de exercícios e carinho.<br><br>
-
-        <b>6. Comportamento e Treinamento<br></b>
-
-        Entenda o comportamento do seu animal e invista em treinamento, se necessário. O treinamento é essencial para a
-        segurança do animal e a harmonia em casa.<br><br>
-
-        <b>7. Castração/esterilização<br></b>
-
-        Ajude a controlar a superpopulação de animais adotando a castração/esterilização. Isso também tem benefícios de
-        saúde para o seu animal de estimação.<br><br>
-
-        <b>8. Educação da Comunidade<br></b>
-
-        Compartilhe seu conhecimento sobre adoção responsável e cuidados com animais com sua comunidade. Promova a
-        conscientização sobre a importância de adotar.<br><br>
-
-        <b>9. Vida de Família<br></b>
-
-        Integre seu animal de estimação à vida da família. Eles precisam de interação social e amor. Brinque, caminhe e
-        passe tempo juntos.<br><br>
-
-        <b>10. Seja Paciente<br></b>
-
-        Lembre-se de que a adaptação do seu novo amigo pode levar tempo. Seja paciente e compreensivo durante o processo
-        de adoção.<br><br>
-      </p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>1. A Importância da Adoção</h3>
+                <p>
+                  A adoção de animais de estimação desempenha um papel fundamental na redução do número de animais abandonados nas
+                  ruas e abrigos. Quando você opta pela adoção, está salvando a vida de um animal e dando a ele a chance de ter um
+                  lar amoroso.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>2. Escolhendo o Animal Certo</h3>
+                <p>
+                  Antes de adotar, considere seu estilo de vida, espaço e recursos disponíveis. Escolha um animal que se adapte às
+                  suas circunstâncias. Cães, gatos, pássaros e animais exóticos têm necessidades diferentes.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>3. Abrigo ou Resgate</h3>
+                <p>
+                  Ao adotar, você pode escolher entre abrigos de animais ou organizações de resgate. Ambos oferecem oportunidades
+                  de adoção, e os animais disponíveis variam, mas todos merecem um lar amoroso.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>4. Responsabilidade de Longo Prazo</h3>
+                <p>
+                  A adoção é um compromisso de longo prazo, pois a expectativa de vida de animais de estimação pode ser de muitos
+                  anos. Certifique-se de que está disposto a dedicar tempo, dinheiro e cuidados ao seu novo companheiro.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>5. Bem-Estar e Cuidados de Saúde</h3>
+                <p>
+                  Mantenha seu animal de estimação saudável com visitas regulares ao veterinário, vacinações e cuidados dentários.
+                  Forneça alimentação de qualidade e água fresca, além de exercícios e carinho.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>6. Comportamento e Treinamento</h3>
+                <p>
+                  Entenda o comportamento do seu animal e invista em treinamento, se necessário. O treinamento é essencial para a
+                  segurança do animal e a harmonia em casa.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>7. Castração/esterilização</h3>
+                <p>
+                  Ajude a controlar a superpopulação de animais adotando a castração/esterilização. Isso também tem benefícios de
+                  saúde para o seu animal de estimação.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>8. Educação da Comunidade</h3>
+                <p>
+                  Compartilhe seu conhecimento sobre adoção responsável e cuidados com animais com sua comunidade. Promova a
+                  conscientização sobre a importância de adotar.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>9. Vida de Família</h3>
+                <p>
+                  Integre seu animal de estimação à vida da família. Eles precisam de interação social e amor. Brinque, caminhe e
+              passe tempo juntos.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="termos-adocao">
+                <h3>10. Seja Paciente</h3>
+                <p>
+                  Lembre-se de que a adaptação do seu novo amigo pode levar tempo. Seja paciente e compreensivo durante o processo
+                  de adoção.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
     </section>
 
     <section id="section5">
@@ -286,6 +342,21 @@
   </div>
   <footer onclick="arriba()"><button id="subida">Voltar</button></footer>
   </div>
+
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs"
+    const swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    })
+  </script>
   <script src="jquery.js"></script>
   <script src="script.js"></script>
 </body>

@@ -252,12 +252,20 @@ footer a:hover {
 
 #section3 {
   scroll-margin-top: 50px;
-  height: 1900px;
+  height: auto;
   background-color: #379f7a;
   margin-top: -30px;
 }
 
+.filtros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #gridContainer {
+  height: 100%;
+  margin: 1.4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -267,7 +275,7 @@ footer a:hover {
   width: 250px;
   border: 1px solid #f0ffd5;
   padding: 10px;
-  margin: 10px;
+  margin: 1rem;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -309,14 +317,13 @@ footer a:hover {
 
 .search-bar {
   display: block;
-  margin: 0 auto;
   text-align: center;
   width: 40%;
   padding: 5px;
   font-size: 16px;
   height: 10px;
   border: 2px solid #1f1c0d;
-  margin-bottom: 40px;
+  margin-right: 1rem;
 }
 
 .custom-button {
@@ -409,8 +416,8 @@ footer a:hover {
 
 #section4 {
   scroll-margin-top: 50px;
-  height: 2000px;
-  background-color: #bbb749;
+  height: 720px;
+  background-color: #79AC78;
   margin-top: -30px;
   padding: 33px;
 }
@@ -435,7 +442,7 @@ footer a:hover {
 #section5 {
   scroll-margin-top: 50px;
   height: 2000px;
-  background-color: #78ae62;
+  background-color: #618264;
   padding: 10px;
 }
 
@@ -450,30 +457,35 @@ footer a:hover {
 #section5 p {
   margin-top: 30px;
   font-size: 24px;
-  color: #1f1c0d;
   font-weight: bold;
   text-align: center;
 }
 
 #section5 ul li {
   font-size: 18px;
-  color: #e0fbac;
+  color: white;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .border-container {
   display: flex;
-  margin: 100px 600px;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
+
 .list-border {
-  flex: 1;
+  width: 500px;
   border: 1px solid #e0fbac;
   padding: 20px;
-  margin: -45px 10px;
-  background: linear-gradient(45deg, #bbb749, #cac75e);
+  background: linear-gradient(45deg, #B0D9B1, #79AC78);
   border-radius: 15px;
+  color: white;
+}
+
+.list-border p {
+  color: white;
 }
 
 form {
@@ -567,6 +579,41 @@ form input[type="text"] {
 
 .descricao-label{
   height: 200px;
+}
+
+
+.swiper {
+  margin: auto;
+  width: 80%;
+}
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.termos-adocao {
+  display: flex;
+  height: 100%;
+  width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #e0fbac;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 14px 14px 11px 0px rgba(0,0,0,0.1);
+}
+
+.termos-adocao h3 {
+  color: #379f7a;
+}
+
+.termos-adocao p {
+  margin: 0;
 }
 
 /*https://paletadecores.com/paleta/379f7a/78ae62/bbb749/e0fbac/1f1c0d/*/
