@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Prático 1: Busca de Dados de uma API REST</title>
+</head>
+<body>
+    <h1>Exemplo Prático 1: Busca de Dados de uma API REST</h1>
+
+    <div id="resultado"></div>
+
+    <script>
+       const cep = "17513100"; // Seu CEP
+const apiUrl = `https://brasilaberto.com/api/v1/zipcode/${cep}`;
+
+
+fetch(apiUrl)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error('Erro na solicitação');
+    }
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data); // Aqui você pode manipular os dados da resposta
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
+  fetch(apiUrl)
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error('Erro na solicitação');
+        }
+        return response.json();
+    })
+    .then((data) => {
+        alert("entrou");
+        const resultadoDiv = document.getElementById("resultado");
+        const result = data.result; // Acessando a chave "result" do JSON de resposta
+        resultadoDiv.innerHTML = `
+            <p>CEP: ${result.zipcode}</p>
+            <p>Logradouro: ${result.street}</p>
+            <p>Bairro: ${result.district}</p>
+            <p>Cidade: ${result.city}</p>
+            <p>Estado: ${result.state}</p>
+        `;
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+
+        
+    </script>
+</body>
+</html>

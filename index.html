@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header" style="height: 10px">
+      <img src="fotos/patinha.jpg" alt="Logo de Patinha" class="logo">
+      <a href="#section1" class="menu-item">Quem somos</a>
+      <div class="menu" id="menu">
+        <a href="#section2" class="menu-item">Galeria</a>
+        <a href="#section3" class="menu-item">Animais para adoção</a>
+        <a href="#section4" class="menu-item">Educacionais</a>
+        <a href="#section5" class="menu-item">Denunciar maus tratos</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <section id="section1" style="background-image: url('fotos/homem.jpg');">
+        <h2>Bem-Vindo ao Nosso Projeto de Resgate e Adoção de Animais: Transformando Vidas</h2>
+        <div class="content-wrapper">
+          <div class="text-content">
+            <p>
+              No coração do nosso compromisso com o bem-estar animal, educar a comunidade e promover o respeito pela
+              vida, nasce o Projeto de Resgate e Adoção de Animais. Cada ação que tomamos é impulsionada por uma paixão
+              inabalável por criar um mundo onde todos os seres vivos têm a chance de viver uma vida cheia de amor,
+              compaixão e segurança.
+              <br><br>
+              Desde o resgate inicial até os cuidados médicos e a reabilitação, estamos empenhados em oferecer uma
+              segunda chance a animais necessitados. Nossa jornada culmina na adoção responsável, um momento mágico em
+              que um animal encontra um lar amoroso e uma família dedicada.
+              <br><br>
+              Nossa missão vai além da proteção dos animais; estendemos nossos esforços para impactar positivamente
+              nossa comunidade. Reduzimos o abandono, transformamos animais traumatizados em seres mais saudáveis e
+              felizes, e promovemos uma mudança cultural em relação aos animais.
+              <br><br>
+              Junte-se a nós nesta jornada de transformação. Descubra como você pode fazer a diferença na vida dos
+              animais e na nossa comunidade.
+            </p>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="section2" class="carousel-section">
+      <div class="carousel">
+        <h1>Pets adotados!<br><br></h1>
+        <p class="carousel-paragraph">Conheça alguns dos pets que nossa instituição cuidou para que encontrassem uma
+          família!</p>
+        <div class="carousel-container">
+          <img src="fotos/imagem1.jpg" alt="Imagem 1">
+          <img src="fotos/imagem2.jpg" alt="Imagem 2">
+          <img src="fotos/imagem3.jpg" alt="Imagem 3">
+          <img src="fotos/imagem4.jpg" alt="Imagem 4">
+          <img src="fotos/imagem5.jpg" alt="Imagem 5">
+          <img src="fotos/imagem6.jpg" alt="Imagem 6">
+          <img src="fotos/imagem7.jpg" alt="Imagem 7">
+
+          <div class="button-container">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+      <h1>Lista de Animais</h1>
+      <input type="text" name="pesquisa" id="pesquisa" class="search-bar">
+      <div id="gridContainer"></div>
+      <div id="informacoes"></div>
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modal-header">
+          <h2 id="modal-title"></h2>
+          <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body" id="modal-content">
+        </div>
+      </div>
+    </section>
+
+    <section id="section4">
+      <h2>Adoção Responsável de Animais de Estimação: Cuidando de Novos Membros da Família</h2>
+      <p> <br><br><br>
+
+        A adoção de um animal de estimação é um ato de amor e compromisso que pode transformar a vida do animal e do
+        adotante. Antes de tomar essa decisão, é importante entender o que a adoção envolve e como cuidar do novo membro
+        da família de maneira responsável. <br><br>
+
+        <b>1. A Importância da Adoção<br></b>
+
+        A adoção de animais de estimação desempenha um papel fundamental na redução do número de animais abandonados nas
+        ruas e abrigos. Quando você opta pela adoção, está salvando a vida de um animal e dando a ele a chance de ter um
+        lar amoroso.<br><br>
+
+        <b>2. Escolhendo o Animal Certo<br></b>
+
+        Antes de adotar, considere seu estilo de vida, espaço e recursos disponíveis. Escolha um animal que se adapte às
+        suas circunstâncias. Cães, gatos, pássaros e animais exóticos têm necessidades diferentes.<br><br>
+
+        <b>3. Abrigo ou Resgate<br></b>
+
+        Ao adotar, você pode escolher entre abrigos de animais ou organizações de resgate. Ambos oferecem oportunidades
+        de adoção, e os animais disponíveis variam, mas todos merecem um lar amoroso.<br><br>
+
+        <b>4. Responsabilidade de Longo Prazo<br></b>
+
+        A adoção é um compromisso de longo prazo, pois a expectativa de vida de animais de estimação pode ser de muitos
+        anos. Certifique-se de que está disposto a dedicar tempo, dinheiro e cuidados ao seu novo companheiro.<br><br>
+
+        <b>5. Bem-Estar e Cuidados de Saúde<br></b>
+
+        Mantenha seu animal de estimação saudável com visitas regulares ao veterinário, vacinações e cuidados dentários.
+        Forneça alimentação de qualidade e água fresca, além de exercícios e carinho.<br><br>
+
+        <b>6. Comportamento e Treinamento<br></b>
+
+        Entenda o comportamento do seu animal e invista em treinamento, se necessário. O treinamento é essencial para a
+        segurança do animal e a harmonia em casa.<br><br>
+
+        <b>7. Castração/esterilização<br></b>
+
+        Ajude a controlar a superpopulação de animais adotando a castração/esterilização. Isso também tem benefícios de
+        saúde para o seu animal de estimação.<br><br>
+
+        <b>8. Educação da Comunidade<br></b>
+
+        Compartilhe seu conhecimento sobre adoção responsável e cuidados com animais com sua comunidade. Promova a
+        conscientização sobre a importância de adotar.<br><br>
+
+        <b>9. Vida de Família<br></b>
+
+        Integre seu animal de estimação à vida da família. Eles precisam de interação social e amor. Brinque, caminhe e
+        passe tempo juntos.<br><br>
+
+        <b>10. Seja Paciente<br></b>
+
+        Lembre-se de que a adaptação do seu novo amigo pode levar tempo. Seja paciente e compreensivo durante o processo
+        de adoção.<br><br>
+      </p>
+    </section>
+
+    <section id="section5">
+      <h2>DENUNCIE MAUS TRATOS</h2>
+      <div class="border-container">
+        <div class="list-border">
+          <p>O que Configura Maus-Tratos a Animais?</p>
+          <ul>
+            <li>Abandonar</li>
+            <li>Ferir, mutilar ou envenenar</li>
+            <li>Manter preso permanentemente em correntes</li>
+            <li>Manter em locais pequenos e sem higiene</li>
+            <li>Não abrigar do sol, do frio e do inverno</li>
+            <li>Não fornecer comida e água diariamente</li>
+          </ul>
+        </div>
+        <div class="list-border">
+          <p>Outras formas de Maus-Tratos:</p>
+          <ul>
+            <li>Negar assistência veterinária ao animal doente ou ferido</li>
+            <li>Obrigar a trabalho excessivo ou superior à sua força</li>
+            <li>Utilizar animais em shows que possam lhe causar pânico ou estresse</li>
+            <li>Capturar animais silvestres</li>
+            <li>Promover violência como rinhas, farra-do-boi, entre outros</li>
+          </ul>
+        </div>
+      </div>
+
+      <p>AJUDE AQUI</p>
+
+      <form action="processar_denuncia.php" method="POST" atualizarProgresso()>
+        <h3>Formulário de Denúncia de Maus-Tratos a Animais</h3>
+
+        <div class="form-ajust">
+          <label for="nome">Nome do denunciante:</label>
+          <input type="text" id="nome" class="minha-label grande-label" name="nome" required><br>
+        </div>
+
+        <div class="formajust">
+          <label for="sexo">Sexo:</label>
+          <input type="radio" id="sexo" class="minha-label" name="sexo" value="masculino">Masculino
+          <input type="radio" id="sexo" class="minha-label" name="sexo" value="feminino">Feminino
+          <input type="radio" id="sexo" class="minha-label" name="sexo" value="outro">Outro<br>
+        </div>
+
+        <div class="form-ajust">
+          <div class="form-row">
+            <div class="form-column">
+              <label for="idade">Idade:</label>
+              <input type="number" id="idade" class="minha-label" name="idade" min="0" max="120">
+            </div>
+            <div class="form-column">
+              <label for="email">E-mail do denunciante:</label>
+              <input type="email" id="email" class="minha-label" name="email" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-ajust">
+          <label for="telefone">Telefone do denunciante:</label>
+          <input type="tel" id="telefone" class="minha-label grande-label" name="telefone"><br>
+        </div>
+        <div class="form-ajust">
+          <label for="animal">Tipo de animal:</label>
+          <input type="text" id="animal" class="minha-label grande-label" name="animal" required><br>
+        </div>
+        <div class="form-ajust">
+          <label for="descricao">Descrição dos maus-tratos:</label>
+          <textarea id="descricao" name="descricao" class="minha-label descricao-label" rows="10"
+            required></textarea><br>
+        </div>
+        <div class="form-ajust">
+          <label for="data">Data dos maus-tratos:</label>
+          <input type="date" id="data" name="data" class="minha-label grande-label" required><br>
+        </div>
+        <div class="form-ajust">
+          <label for="cep-local">CEP do local dos maus-tratos:</label>
+          <input type="text" oninput="formataCEP(this)" id="cep-local" name="cep-local" class="minha-label grande-label"
+            required><br>
+        </div>
+        <div class="form-ajust">
+          <label for="logradouro">Rua:</label>
+          <input type="text" id="rua" name="rua" class="minha-label grande-label" required><br>
+        </div>
+        <div class="form-ajust">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" class="minha-label grande-label" required><br>
+        </div>
+        <div class="form-ajust">
+          <div class="form-row">
+            <div class="form-column">
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" name="cidade" class="minha-label" required><br>
+            </div>
+            <div class="form-column">
+              <label for="estado">Estado:</label>
+              <input type="text" id="estado" name="estado" class="minha-label" required><br>
+            </div>
+          </div>
+        </div>
+        <div class="form-ajust">
+          <label for="testemunhas">Testemunhas (se houver):</label>
+          <input type="text" id="testemunhas" name="testemunhas" class="minha-label grande-label"><br>
+        </div>
+        <div class="form-ajust">
+          <label for="anexar-foto">Anexar foto (se disponível):</label>
+          <input type="file" id="anexar-foto" name="anexar-foto"><br>
+          <div class="form-ajust">
+            <label for="gravidade">Gravidade dos maus-tratos:</label>
+            <select id="gravidade" name="gravidade" class="minha-label grande-label">
+              <option value="leve">Leve</option>
+              <option value="moderada">Moderada</option>
+              <option value="grave">Grave</option>
+            </select><br>
+          </div>
+          <div class="form-ajust">
+            <label for="tipo-crime">Tipo de Crime (TC):</label>
+            <select id="tipo-crime" name="tipo-crime" class="minha-label grande-label">
+              <option value="violencia">Violência</option>
+              <option value="abandono">Abandono</option>
+              <option value="envenenamento">Envenenamento</option>
+              <option value="negligencia">Negligência</option>
+              <option value="outros">Outros</option>
+            </select><br>
+          </div>
+          <div class="form-ajust">
+            <label for="concordo">Concordo em fazer esta denúncia:</label>
+            <input type="checkbox" id="concordo" name="concordo" class="minha-label" required>
+          </div>
+
+          <input type="submit" value="Enviar Denúncia" class="enviar-denuncia">
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+
+      </form>
+
+    </section>
+
+  </div>
+  <footer onclick="arriba()"><button id="subida">Voltar</button></footer>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
